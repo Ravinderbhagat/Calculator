@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calc-wrap" aria-label="Calculator">
+    <section class="display-area">
+      <div id="expression" aria-live="polite"></div>
+      <div id="display">0</div>
+    </section>
+
+    <section class="buttons" id="buttons">
+      <button class="btn btn-fn" data-action="clear" type="button">AC</button>
+      <button class="btn btn-fn" data-action="sign" type="button">+/−</button>
+      <button class="btn btn-fn" data-action="percent" type="button">%</button>
+      <button class="btn btn-op" data-action="op" data-value="÷" type="button">÷</button>
+
+      <button class="btn btn-num" data-action="num" data-value="7" type="button">7</button>
+      <button class="btn btn-num" data-action="num" data-value="8" type="button">8</button>
+      <button class="btn btn-num" data-action="num" data-value="9" type="button">9</button>
+      <button class="btn btn-op" data-action="op" data-value="×" type="button">×</button>
+
+      <button class="btn btn-num" data-action="num" data-value="4" type="button">4</button>
+      <button class="btn btn-num" data-action="num" data-value="5" type="button">5</button>
+      <button class="btn btn-num" data-action="num" data-value="6" type="button">6</button>
+      <button class="btn btn-op" data-action="op" data-value="−" type="button">−</button>
+
+      <button class="btn btn-num" data-action="num" data-value="1" type="button">1</button>
+      <button class="btn btn-num" data-action="num" data-value="2" type="button">2</button>
+      <button class="btn btn-num" data-action="num" data-value="3" type="button">3</button>
+      <button class="btn btn-op" data-action="op" data-value="+" type="button">+</button>
+
+      <button class="btn btn-num btn-zero" data-action="num" data-value="0" type="button">0</button>
+      <button class="btn btn-num" data-action="decimal" type="button">.</button>
+      <button class="btn btn-eq" data-action="equals" type="button">=</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
